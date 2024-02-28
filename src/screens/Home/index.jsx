@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, Image} from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -17,7 +17,7 @@ export default function Home() {
            source={require('../../../assets/fundinho.jpg')}
          />
           <TouchableOpacity
-              onPress={() => navigation.navigate("Itens")}
+              onPress={() => navigation.navigate("itens")}
           >
                    <Text>Clique para saber mais dos nossos produtos:</Text>
           </TouchableOpacity>

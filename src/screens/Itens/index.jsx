@@ -1,4 +1,5 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image} from 'react-native'
+
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -6,14 +7,14 @@ export default function index() {
   const navigation = useNavigation()
   return (
     <View>
-      <Text>Itens</Text>
+      <Text>Nossos produtos</Text>
      <Text>
         conheça nosso adorçadores de vida:
      </Text>
 
      
      <view>Cafés
-     <Image
+     <Image width={1} height={2}
         source={require('../../../assets/cafes.webp')}
       />
       <Text>Uma cafeteria é muito mais do que apenas um lugar para tomar café </Text>
