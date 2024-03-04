@@ -1,0 +1,55 @@
+import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native'
+import React from 'react'
+import { useNavigation } from '@react-navigation/native'
+import Itens from '../../components/Detalhes'
+
+
+
+
+export default function MiniBolo() {
+  const navigation = useNavigation()
+  return (
+    <ScrollView>
+      <View>
+      <View  style={styles.containerItens}>
+          <Image style={styles.foto}
+            source={require('../../../assets/fundinho5.jpg')}
+          /></View>
+    
+
+        <Itens
+          item={"Cupcake."}
+          imagem={require("../../../assets/doceBolo2.jpg")}
+          sobre={"Um bolinho perfeito para viagem acompanhado de um bom café, temos de: chocolate, morango e creme."}
+        preco={"R$ 8,00"} 
+
+  
+        />
+
+<View>
+
+<TouchableOpacity
+  onPress={() => navigation.navigate("BellaDoces")}
+>
+  <Text >Voltar para pagina inicial</Text>
+</TouchableOpacity>
+
+</View> 
+       
+
+    
+      </View>
+    </ScrollView>
+  )
+};
+const styles = StyleSheet.create({
+
+  foto: {
+    height: "40px",
+    width: "100vw",
+    opacity:"20",
+  },
+
+})
+
+

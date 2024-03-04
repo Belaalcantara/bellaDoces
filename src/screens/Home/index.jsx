@@ -30,7 +30,7 @@ export default function Home() {
               Sempre entragando o melhor e mais gostoso lado da vida para nossos clietes...Nunca perca uma oportunidade de adoçar a vida, conhça BellaDoces!
             </Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate("Produtos")}
+              onPress={() => navigation.navigate("Bolos")}
             >
               <Text style={styles.textDetalhe2}>Clique para ver nossos bolos:</Text>
             </TouchableOpacity>
@@ -42,7 +42,7 @@ export default function Home() {
                 source={require('../../../assets/doceria1.jpg')}
               />
                <TouchableOpacity
-                onPress={() => navigation.navigate("Produtos")}
+                onPress={() => navigation.navigate("Tortas")}
               >
                 <Text style={styles.textDetalhe2}>Clique para ver nossas tortas:</Text>
               </TouchableOpacity>
@@ -51,18 +51,10 @@ export default function Home() {
                 source={require('../../../assets/doceria2.jpg')}
               />
 
-              <TouchableOpacity
-                onPress={() => navigation.navigate("Produtos")}
-              >
-                <Text style={styles.textDetalhe2}>Clique para ver nossos doces:</Text>
-              </TouchableOpacity>
-
-              <Image style={styles.foto2}
-                source={require('../../../assets/cafeteria3.jpg')}
-              />
+            
 
               <TouchableOpacity
-                onPress={() => navigation.navigate("Produtos")}
+                onPress={() => navigation.navigate("Café")}
               >
                 <Text style={styles.textDetalhe2}>Clique para ver nossos cafés:</Text>
               </TouchableOpacity>

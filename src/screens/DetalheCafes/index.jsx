@@ -1,40 +1,68 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import Itens from '../../components/Detalhes'
+
+import Cards from '../../components/cards'
 
 
 export default function Cafes() {
   const navigation = useNavigation()
   return (
-    <View>
-        <Text>Detlahes sobre este produto.</Text>
-        <ScrollView>
-    <Itens
+    <ScrollView>
+    <View  style={styles.containerItens}>
+    <View  style={styles.containerItens}>
+          <Image style={styles.foto}
+            source={require('../../../assets/fundinho5.jpg')}
+          /></View>
+    
+    <Cards
          item={"Café espresso."}
-        imagem={require("../../../assets/cafeEspresso.jpg")}
-        sobre={"Um café delicioso, do jeito que voce mais precisa de todas as formas que quiser, sendo: fraco, medio, forte e estra forte."}
-        preco={"R$ 5,00"}
+        img={require("../../../assets/cafeEspresso.jpg")}
+        frase={"Energia nunca é demais."}
+ 
     />
 
-    <Itens
+    <Cards
         item={"Cappuccino."}
-        imagem={require("../../../assets/cappuccino.jpg")}
-        sobre={"Um cappuccino cremoso para adoçar o dia ao mesmo tempo que o enche de energia, do jeito que voce mais precisa de todas as formas que quiser, sendo: fraco, medio, forte e estra forte."}
-        preco={"R$ 8,00"}
+        img={require("../../../assets/cappuccino.jpg")}
+        frase={"a mistura perfeita entre correria e se deliciar com a vida."}
+     
     />
+
+<Cards
+        item={"Café gelado."}
+        img={require("../../../assets/caféGelado.webp")}
+        frase={"café nunca é demais, mas quando o café vem para refrescar é ainda melhor!"}
+  
+    />
+
+ 
      <View>
+
           <TouchableOpacity
             onPress={() => navigation.navigate("BellaDoces")}
           >
-            <Text style={styles.textDetalhe} >Voltar para pagina inicial</Text>
+            <Text >Voltar para pagina inicial</Text>
           </TouchableOpacity>
 
         </View> 
-        
+        </View>
+        <View  style={styles.containerItens}>
+          <Image style={styles.foto}
+            source={require('../../../assets/fundinho5.jpg')}
+          /></View>
     </ScrollView>
-    </View>
+    
   )
 };
+const styles = StyleSheet.create({
+
+  foto: {
+    height: "40px",
+    width: "100vw",
+    opacity:"20",
+  },
+
+})
 
 
