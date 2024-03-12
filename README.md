@@ -5,3 +5,4 @@ Conheça BellaDoces, a minha, a sua, a nossa cafeteria... E lembre-se, cafeteria
 
 ->sobre o projeto: Neste projeto inicial, estamos praticando Stack navigation e revisando CSS e Components.
 
+imagens do site da nossa confeitaria:
